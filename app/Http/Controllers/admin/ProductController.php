@@ -46,7 +46,7 @@ class ProductController extends Controller
         $product = Product::create([
             'title'=>$request->title,
             'price'=>$request->price,
-            'compare_price'=>$request->compare_price,
+            'discount_price'=>$request->discount_price,
             'category_id'=>$request->category,
             'brand_id'=>$request->brand,
             'sku'=>$request->sku,
@@ -152,7 +152,7 @@ class ProductController extends Controller
         $product->update([
             'title'=>$request->title,
             'price'=>$request->price,
-            'compare_price'=>$request->compare_price,
+            'discount_price'=>$request->discount_price,
             'category_id'=>$request->category,
             'brand_id'=>$request->brand,
             'sku'=>$request->sku,

@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->double('price', 10, 2);
-            $table->double('compare_price', 10, 2)->nullable();
+            $table->double('discount_price', 10, 2)->nullable();
             $table->text('description')->nullable();
             $table->text('short_description')->nullable();
             $table->string('image')->nullable();
